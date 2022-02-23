@@ -1,0 +1,30 @@
+{% extends 'users/base.html' %}
+
+{% block title %}
+Log in
+{% endblock title %}
+
+{% block content %}
+
+<form action="{% url 'users:main' %}" method='post'>
+    <div class="auth">
+        {% csrf_token %}
+        <input type="input" name="emotion" placeholder="정서">
+        <input type="input" name="autonomous" placeholder="자율">
+        <input type="input" name="motivation" placeholder="학습동기">
+        <input type="input" name="time_management" placeholder="시간관리">
+        <input type="input" name="concentration" placeholder="집중력">
+        <input type="input" name="reading" placeholder="독서능력">
+        <input type="input" name="memorize" placeholder="암기능력">
+        <input type="input" name="test_management" placeholder="시험관리">
+        <input type="input" name="taking_note" placeholder="노트필기">
+        <input type="input" name="focus" placeholder="수업집중">
+    </div>
+    
+    <div class="auth_link">
+        <input type="submit" value="예측하기">
+    </div>
+</form>
+
+
+{% endblock content %}
