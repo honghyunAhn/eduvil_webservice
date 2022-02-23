@@ -1,0 +1,154 @@
+body {
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    right: -8px;
+    top: -8px;
+}
+#skyVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 0;
+}
+.content {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+h2 {
+    color: #c9ccd1;
+    margin-bottom: 55px;
+}
+
+form .auth {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin: auto;
+    width: 105px;
+}
+
+form .auth input[type=input] {
+    margin-bottom: 10px;
+    background-color: transparent;
+    border: none;
+    height: 25px;
+    width: 105px;
+    color: #c9ccd1;
+    font-size: 20px;
+    font-weight: bold;
+    vertical-align: middle;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+form .auth input[type=input]::placeholder {
+    color: #c9ccd1;
+}
+
+form .auth input[type=submit] {
+    width: 100px;
+    height: 35px;
+    left: 4px;
+    position: relative;
+    border: none;
+    font-size: 15px;
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+    background-color: transparent;
+    color: white;
+    border: 2px solid #c9ccd1;
+    border-radius: 10px;
+}
+form .auth input:last-child {
+    margin-top: 20px;
+}
+
+/* Sign up, Log in Link */
+.auth_link {
+    margin-top: 50px;
+    width: 350px;
+    height: 50px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.auth_link a{
+    position: relative;
+    top: 15px;
+}
+/* footer */
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+footer .list {
+    margin: auto;
+    left: -136px;
+    position: relative;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    color: white;
+    font-size: 15px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+footer ul:nth-child(1) {
+    position: relative;
+    top: 10px;
+}
+footer ul:nth-child(2) {
+    left: 9px;
+    position: relative;
+    top: 18px;
+}
+footer ul li {
+    margin: 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+footer .company {
+    color: white;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    top: 50px;
+    left: 125px;
+    font-size: 20px;
+}
+/* Header - logo img */
+.header {
+    z-index: 1;
+}
+.main-img img {
+    position: relative;
+    top: 10px;
+    left: 9%;
+    width: 154px;
+    height: 70px;
+}

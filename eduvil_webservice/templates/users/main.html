@@ -1,11 +1,7 @@
 {% extends 'users/base.html' %}
 
-{% block title %}
-Log in
-{% endblock title %}
-
 {% block content %}
-
+<h2>내신 전체 평균 예측</h2>
 <form action="{% url 'users:main' %}" method='post'>
     <div class="auth">
         {% csrf_token %}
@@ -19,11 +15,9 @@ Log in
         <input type="input" name="test_management" placeholder="시험관리">
         <input type="input" name="taking_note" placeholder="노트필기">
         <input type="input" name="focus" placeholder="수업집중">
-    </div>
-    
-    <div class="auth_link">
         <input type="submit" value="예측하기">
     </div>
+    
 </form>
 
 

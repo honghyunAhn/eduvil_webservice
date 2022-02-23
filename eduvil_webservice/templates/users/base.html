@@ -8,12 +8,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" type="text/css" href="{% static 'css/users/main.css'%}">
+    <link rel="icon" type="image/png" href={% static 'images/users/main_logo.png'%} />
+
     <title>eduvil</title>
 </head>
 <body>
     <div class="header">
         {% include "users/header.html" %}
     </div>
+
+    <video autoplay muted loop id="skyVideo">
+        <source src="{% static 'video/users/sky.mp4'%}" type="video/mp4">
+    </video>
 
     <div class="content">
         {% block content %} {% endblock %}
