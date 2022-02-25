@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/users/main.css'%}">
     <link rel="icon" type="image/png" href={% static 'images/users/main_logo.png'%} />
 
+    <!-- Font Awesome  -->
     <title>eduvil</title>
 </head>
 <body>
@@ -24,7 +25,7 @@
     <div class="content">
         {% block content %} {% endblock %}
     </div>
-
     {% include "users/footer.html" %}
+    <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
 </body>
 </html>
